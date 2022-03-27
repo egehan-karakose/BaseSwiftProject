@@ -1,0 +1,6 @@
+framework module UIBannerView {
+  umbrella header "UIBannerView-iOS15.2-umbrella.h"
+
+  export *
+  module * { export * }
+}

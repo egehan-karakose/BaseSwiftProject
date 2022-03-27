@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FormTextField" customModule="UIComp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tac-fP-wlY">
+                    <rect key="frame" x="16" y="18" width="382" height="115"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Xd4-nJ-13n">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="115"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py3-mU-QSx">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="85"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.65876108407974243" green="0.65097647905349731" blue="0.65098065137863159" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-B0-Z41" customClass="JMMaskTextField" customModule="UIComp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="89" width="382" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7bO-oT-zFq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgl-Ns-OMl">
+                                    <rect key="frame" x="0.0" y="110" width="382" height="1"/>
+                                    <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156922817230225" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="u14-K4-w3u"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLk-u1-xGt">
+                                    <rect key="frame" x="0.0" y="115" width="382" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ghG-B0-Z41" secondAttribute="trailing" id="i68-0U-C78"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="uqA-GI-tZN">
+                            <rect key="frame" x="340" y="86" width="42" height="20.5"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Xd4-nJ-13n" firstAttribute="top" secondItem="Tac-fP-wlY" secondAttribute="top" id="FnH-Mc-cNo"/>
+                        <constraint firstAttribute="trailing" secondItem="Xd4-nJ-13n" secondAttribute="trailing" id="SPA-7Q-ncy"/>
+                        <constraint firstAttribute="trailing" secondItem="uqA-GI-tZN" secondAttribute="trailing" id="a6u-ed-D2r"/>
+                        <constraint firstAttribute="bottom" secondItem="Xd4-nJ-13n" secondAttribute="bottom" id="ote-ro-DQ2"/>
+                        <constraint firstItem="vgl-Ns-OMl" firstAttribute="top" secondItem="uqA-GI-tZN" secondAttribute="bottom" constant="10" id="oy7-tY-JPA"/>
+                        <constraint firstItem="Xd4-nJ-13n" firstAttribute="leading" secondItem="Tac-fP-wlY" secondAttribute="leading" id="v0P-Zg-uPa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tac-fP-wlY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="0rd-xp-1jW"/>
+                <constraint firstItem="Tac-fP-wlY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8gK-b8-AAI"/>
+                <constraint firstAttribute="bottom" secondItem="Tac-fP-wlY" secondAttribute="bottom" id="9Ze-bU-eq3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tac-fP-wlY" secondAttribute="trailing" constant="16" id="VkK-81-Z1d"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="accessoryStackView" destination="uqA-GI-tZN" id="QSB-MQ-M1j"/>
+                <outlet property="descriptionLabel" destination="vLk-u1-xGt" id="Z4J-NO-ZCL"/>
+                <outlet property="lineView" destination="vgl-Ns-OMl" id="5ba-Kr-Aaq"/>
+                <outlet property="textField" destination="ghG-B0-Z41" id="FtU-0o-d20"/>
+                <outlet property="textFieldTrailingConstraint" destination="i68-0U-C78" id="RTu-po-gsM"/>
+                <outlet property="titleLabel" destination="py3-mU-QSx" id="bDz-RR-vtJ"/>
+                <outlet property="verticalStackView" destination="Xd4-nJ-13n" id="1jb-s1-jDQ"/>
+                <outlet property="verticalStackViewBottomConstraint" destination="ote-ro-DQ2" id="vYi-b9-vv6"/>
+                <outlet property="verticalStackViewTopConstraint" destination="FnH-Mc-cNo" id="sfT-OO-nVu"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="57.254464285714285"/>
+        </view>
+    </objects>
+</document>

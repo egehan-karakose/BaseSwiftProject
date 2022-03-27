@@ -1,0 +1,78 @@
+workspace 'BaseProject'
+
+def uiPods
+  pod 'PKHUD'
+  pod 'CropViewController'
+end
+
+def swinject 
+  pod 'Swinject'
+end
+
+def gloss
+ pod 'Gloss', '~> 2.0'
+end
+
+def alamofire
+  pod 'Alamofire', '~> 5.5'
+end
+
+def lottie
+  pod 'lottie-ios'
+end
+
+def banner 
+  pod 'UIBannerView', git:'https://github.com/sonmezvolkan/UIBannerView.git'
+  pod 'DecoratableViews', git:'https://github.com/sonmezvolkan/DecoratableViews.git'
+end
+
+target 'BaseProject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+	uiPods
+	swinject
+	gloss
+	alamofire
+	lottie
+	banner
+	pod 'netfox'
+
+end
+
+target 'Comp' do
+  platform :ios, '11.0'
+  use_frameworks!
+
+  project 'Comp/Comp.project'
+  uiPods
+  banner
+  lottie
+end
+
+target 'Common' do
+  platform :ios, '11.0'
+  use_frameworks!
+
+  project 'Common/Common.project'
+  uiPods
+  lottie
+end
+
+target 'Network' do
+  platform :ios, '11.0'
+  use_frameworks!
+
+  project 'Network/Network.project'
+  uiPods
+  
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
+	    config.build_settings['ENABLE_BITCODE'] = 'NO'
+        end
+    end
+end

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoView" customModule="UIComp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I7P-5m-Kq8">
+                    <rect key="frame" x="16" y="8" width="288" height="142"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c2-8f-ihT">
+                            <rect key="frame" x="0.0" y="59" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="M5K-eU-ZJr"/>
+                                <constraint firstAttribute="height" constant="24" id="eXa-64-RU6"/>
+                            </constraints>
+                            <state key="normal" image="info_white"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGS-BH-LGc">
+                            <rect key="frame" x="34" y="16.5" width="254" height="109"/>
+                            <string key="text">Havale işlemi sırasında, Bankamızca belirlenen işlem ücretleri uygulanabilecektir. Havale işlemi sırasında, Bankamızca belirlenen işlem ücretleri uygulanabilecektir. Havale işlemi sırasında, Bankamızca belirlenen işlem ücretleri uygulanabilecektir.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.6588235294117647" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="I7P-5m-Kq8" secondAttribute="trailing" constant="16" id="7x9-2v-Af6"/>
+                <constraint firstAttribute="bottom" secondItem="I7P-5m-Kq8" secondAttribute="bottom" constant="8" id="oiI-Ig-hC9"/>
+                <constraint firstItem="I7P-5m-Kq8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="qL0-2v-cA9"/>
+                <constraint firstItem="I7P-5m-Kq8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="xFA-kS-cjy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="infoButton" destination="5c2-8f-ihT" id="Uek-e7-vZH"/>
+                <outlet property="textLabel" destination="xGS-BH-LGc" id="3UG-LH-Ldt"/>
+            </connections>
+            <point key="canvasLocation" x="91.304347826086968" y="395.75892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info_white" width="256" height="256"/>
+    </resources>
+</document>

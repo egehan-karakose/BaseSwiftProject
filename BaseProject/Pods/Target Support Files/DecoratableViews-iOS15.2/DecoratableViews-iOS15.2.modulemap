@@ -1,0 +1,6 @@
+framework module DecoratableViews {
+  umbrella header "DecoratableViews-iOS15.2-umbrella.h"
+
+  export *
+  module * { export * }
+}

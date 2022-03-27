@@ -1,0 +1,6 @@
+framework module PKHUD {
+  umbrella header "PKHUD-iOS15.2-umbrella.h"
+
+  export *
+  module * { export * }
+}

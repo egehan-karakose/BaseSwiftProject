@@ -1,0 +1,66 @@
+PODS:
+  - Alamofire (5.5.0)
+  - CropViewController (2.6.1)
+  - DecoratableViews (1.0.4)
+  - Gloss (2.1.1)
+  - lottie-ios (3.3.0)
+  - netfox (1.20.0)
+  - PKHUD (5.3.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - Swinject (2.8.1)
+  - UIBannerView (1.0.4):
+    - SDWebImage
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - CropViewController
+  - DecoratableViews (from `https://github.com/sonmezvolkan/DecoratableViews.git`)
+  - Gloss (~> 2.0)
+  - lottie-ios
+  - netfox
+  - PKHUD
+  - Swinject
+  - UIBannerView (from `https://github.com/sonmezvolkan/UIBannerView.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CropViewController
+    - Gloss
+    - lottie-ios
+    - netfox
+    - PKHUD
+    - SDWebImage
+    - Swinject
+
+EXTERNAL SOURCES:
+  DecoratableViews:
+    :git: https://github.com/sonmezvolkan/DecoratableViews.git
+  UIBannerView:
+    :git: https://github.com/sonmezvolkan/UIBannerView.git
+
+CHECKOUT OPTIONS:
+  DecoratableViews:
+    :commit: 97f3a5f2ddb345a0536ebb1369d1ed91bf6bcecd
+    :git: https://github.com/sonmezvolkan/DecoratableViews.git
+  UIBannerView:
+    :commit: 0d12ccd0f1b89700c80e6911c4d318cf1bfc4a49
+    :git: https://github.com/sonmezvolkan/UIBannerView.git
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
+  DecoratableViews: 36191ea7898d0202cf884406e055bdab044a082e
+  Gloss: 9df15229b2f6484c14752a738474fd2528b4c5cd
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  netfox: 6b5c9724304b0cd99ca8515ac732a9f710e4ea5f
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
+  UIBannerView: 0a1e9408a6d701d857993b3cd49a08a058446f23
+
+PODFILE CHECKSUM: ac021cb526ae5862a686554f68040d817f0523ee
+
+COCOAPODS: 1.11.3

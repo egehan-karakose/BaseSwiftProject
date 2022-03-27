@@ -1,0 +1,34 @@
+{
+  "name": "DecoratableViews",
+  "version": "1.0.4",
+  "summary": "A view can be decorate, you can use this library for any view and any decorator like bottom, top, center decorator. You can also create your own decorator.",
+  "description": "This library provides an easy way to create Instagram story-like views with cube animations. It requires an arraylist of IStorySection as parameter. Two more optional parameters are available for changing the colors of progress bar.",
+  "homepage": "https://github.com/sonmezvolkan",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Volkan Sönmez": "sonmez.volkan92@gmail.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/sonmezvolkan/DecoratableViews.git",
+    "tag": "1.0.4"
+  },
+  "source_files": [
+    "DecoratableViews",
+    "DecoratableViews/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "resource_bundles": {
+    "DecoratableViews": [
+      "DecoratableViews/**/*.{storyboard,xib,png}"
+    ]
+  },
+  "resources": "DecoratableViews/**/*.{lproj,storyboard,xib,png}",
+  "swift_version": "5.0"
+}
