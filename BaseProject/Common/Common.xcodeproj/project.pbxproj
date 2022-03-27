@@ -47,7 +47,6 @@
 		B072A04727F04C9100419BF1 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04627F04C9100419BF1 /* TypeAliases.swift */; };
 		B072A04D27F05D8500419BF1 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04927F05D8500419BF1 /* Localization.swift */; };
 		B072A04E27F05D8500419BF1 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04A27F05D8500419BF1 /* Language.swift */; };
-		B072A04F27F05D8500419BF1 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B072A04B27F05D8500419BF1 /* Localization.bundle */; };
 		B072A05027F05D8500419BF1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A04C27F05D8500419BF1 /* Extensions.swift */; };
 		B072A05E27F05DEF00419BF1 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B072A05227F05DEF00419BF1 /* Roboto-Italic.ttf */; };
 		B072A05F27F05DEF00419BF1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B072A05327F05DEF00419BF1 /* Roboto-Black.ttf */; };
@@ -68,6 +67,7 @@
 		B072A17027F07A6C00419BF1 /* Obfuscated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16E27F07A6C00419BF1 /* Obfuscated.swift */; };
 		B072A17127F07A6C00419BF1 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A16F27F07A6C00419BF1 /* Obfuscator.swift */; };
 		B072A17427F07ADB00419BF1 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072A17327F07ADB00419BF1 /* System.swift */; };
+		B072A20C27F0AFAD00419BF1 /* Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B072A20B27F0AFAD00419BF1 /* Localization.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +137,6 @@
 		B072A04627F04C9100419BF1 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		B072A04927F05D8500419BF1 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		B072A04A27F05D8500419BF1 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		B072A04B27F05D8500419BF1 /* Localization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Localization.bundle; sourceTree = "<group>"; };
 		B072A04C27F05D8500419BF1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B072A05227F05DEF00419BF1 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		B072A05327F05DEF00419BF1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
@@ -158,6 +157,7 @@
 		B072A16E27F07A6C00419BF1 /* Obfuscated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscated.swift; sourceTree = "<group>"; };
 		B072A16F27F07A6C00419BF1 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		B072A17327F07ADB00419BF1 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		B072A20B27F0AFAD00419BF1 /* Localization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Localization.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,8 +320,8 @@
 			children = (
 				B072A04C27F05D8500419BF1 /* Extensions.swift */,
 				B072A04A27F05D8500419BF1 /* Language.swift */,
-				B072A04B27F05D8500419BF1 /* Localization.bundle */,
 				B072A04927F05D8500419BF1 /* Localization.swift */,
+				B072A20B27F0AFAD00419BF1 /* Localization.bundle */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -474,7 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B072A06827F05DEF00419BF1 /* Roboto-ThinItalic.ttf in Resources */,
-				B072A04F27F05D8500419BF1 /* Localization.bundle in Resources */,
+				B072A20C27F0AFAD00419BF1 /* Localization.bundle in Resources */,
 				B072A06727F05DEF00419BF1 /* Roboto-BoldItalic.ttf in Resources */,
 				B072A05E27F05DEF00419BF1 /* Roboto-Italic.ttf in Resources */,
 				B072A06227F05DEF00419BF1 /* Roboto-Bold.ttf in Resources */,

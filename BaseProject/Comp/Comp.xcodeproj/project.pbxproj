@@ -134,7 +134,6 @@
 		B072A07A27F062A000419BF1 /* CustomableAlert */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomableAlert; sourceTree = "<group>"; };
 		B072A07B27F062A000419BF1 /* AlertHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHolderView.swift; sourceTree = "<group>"; };
 		B072A09027F0696100419BF1 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B072A09127F0696100419BF1 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B072A0A427F06D8C00419BF1 /* FormTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTextField.xib; sourceTree = "<group>"; };
 		B072A0A727F06D8C00419BF1 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		B072A0AD27F06DE600419BF1 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -536,7 +535,6 @@
 			isa = PBXGroup;
 			children = (
 				B072A09027F0696100419BF1 /* Common.framework */,
-				B072A09127F0696100419BF1 /* Network.framework */,
 				0C4E172E17307FCB0E5018E8 /* Pods_Comp.framework */,
 			);
 			name = Frameworks;

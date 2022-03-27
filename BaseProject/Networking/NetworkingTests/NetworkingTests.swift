@@ -1,14 +1,14 @@
 //
-//  NetworkTests.swift
-//  NetworkTests
+//  NetworkingTests.swift
+//  NetworkingTests
 //
 //  Created by Egehan KARAKÖSE (Dijital Kanallar Uygulama Geliştirme Müdürlüğü) on 27.03.2022.
 //
 
 import XCTest
-@testable import Network
+@testable import Networking
 
-class NetworkTests: XCTestCase {
+class NetworkingTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -137,12 +137,12 @@ public extension EndpointType {
     func retrieve<T: Codable>(_ success: @escaping (T?) -> Void, failure: ((ErrorPair?) -> Void)? = nil) {
         let router = Router<Self>()
 
-        router.request(self) { (response: Result<ResponseData<T>, BError>) in
+        router.request(self) { (response: Result<T, BError>) in
             self.requestCompleted()
             
             switch response {
             case .success(let successModel):
-                success(successModel.value)
+                success(successModel)
             case .failure(let error):
                 self.handleFailure(error: error, failure: failure)
             }

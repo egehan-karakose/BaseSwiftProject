@@ -123,7 +123,7 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
-		<key>Pods-Network.xcscheme</key>
+		<key>Pods-Networking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

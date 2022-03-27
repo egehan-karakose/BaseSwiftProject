@@ -121,23 +121,23 @@ public class HeaderBuilder {
     public class func build() -> [String: String] {
         var header = [String: String]()
         
-        header["Content-Type"] = "application/json;charset=uft-8"
-        header["Accept"] = "application/json"
-        
-        header["client-key"] = NetworkEnvironment.key.revealed
-        
-        header["app-build-number"] = (Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String)
-        header["build-serial"] = (Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String)
-        header["app-id"] = Bundle.main.bundleIdentifier
-        
-        header["app-is-simulator"] = Platform.isSimulatorText()
-        header["is-rooted"] = Platform.isJailbrokenText()
-        
-        header["culture"] = Localization.currentLanguage.asParameter
-        
-        header["timestamp"] = String(Date().timeIntervalSince1970 * 1000)
-        
-        header["channel"] = "Mobile"
+//        header["Content-Type"] = "application/json;charset=uft-8"
+//        header["Accept"] = "application/json"
+//
+//        header["client-key"] = NetworkEnvironment.key.revealed
+//
+//        header["app-build-number"] = (Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String)
+//        header["build-serial"] = (Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String)
+//        header["app-id"] = Bundle.main.bundleIdentifier
+//
+//        header["app-is-simulator"] = Platform.isSimulatorText()
+//        header["is-rooted"] = Platform.isJailbrokenText()
+//
+//        header["culture"] = Localization.currentLanguage.asParameter
+//
+//        header["timestamp"] = String(Date().timeIntervalSince1970 * 1000)
+//
+//        header["channel"] = "Mobile"
 
         return header
     }

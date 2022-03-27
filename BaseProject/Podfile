@@ -59,11 +59,11 @@ target 'Common' do
   lottie
 end
 
-target 'Network' do
+target 'Networking' do
   platform :ios, '11.0'
   use_frameworks!
 
-  project 'Network/Network.project'
+  project 'Networking/Networking.project'
   uiPods
   
 end

@@ -30,11 +30,11 @@ public enum NetworkEnvironment: String, CaseIterable {
     }
     
     public var url: URL {
-        var urlString = ""
+        var urlString = "https://swapi.dev/api/"
         switch self {
         case .production: urlString = ""
         case .preprod: urlString = ""
-        case .test: urlString = ""
+        case .test: urlString = "https://swapi.dev/api/"
         case .linuxTest: urlString = ""
         case .load: urlString = ""
         case .pilot: urlString = ""
@@ -43,12 +43,12 @@ public enum NetworkEnvironment: String, CaseIterable {
     }
     
     public var msisdnUrl: URL {
-        var urlString = ""
+        var urlString = "https://swapi.dev/api/"
         switch self {
         case .production: urlString = ""
         case .preprod: urlString = ""
-        case .test: urlString = ""
-        case .linuxTest: urlString = ""
+        case .test: urlString = "https://swapi.dev/api/"
+        case .linuxTest: urlString = "https://swapi.dev/api/"
         case .load: urlString = ""
         case .pilot: urlString = ""
         }
